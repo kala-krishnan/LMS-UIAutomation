@@ -13,6 +13,10 @@ public class DriverFactory {
 	private  WebDriver driver=null;
 	//private static final Logger LOG=LogManager.getLogger(DriverManager.class);
 
+	public DriverFactory() {
+		WebDriverManager.chromedriver().clearDriverCache().setup();
+	}
+
 		
 		public  WebDriver launchBrowser() {
 			try {
@@ -22,10 +26,11 @@ public class DriverFactory {
 				switch (browserName) {
 				
 				case "chrome":
+
 					ChromeOptions chroptions = new ChromeOptions();
-					chroptions.addArguments("headless");
-					WebDriverManager.chromedriver().driverVersion("115.0.5790.170").setup();
-					driver= new ChromeDriver();
+				//	chroptions.addArguments("headless");
+					//WebDriverManager.chromedriver().driverVersion("115.0.5790.170").setup();
+					driver= new ChromeDriver(chroptions);
 //					LOG.info("Launching browser:" +browser_Name);
 					break;
 				case "edge":

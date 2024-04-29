@@ -28,7 +28,6 @@ public class LoginModule_StepDefinitions {
 
 	@Then("Admin Should land on LMS-UI Dashboard Page")
 	public void admin_should_land_on_lms_ui_dashboard_page() {
-
 	
 	}
 
