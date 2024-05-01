@@ -1,4 +1,8 @@
 Feature: Validation of Program Page
+
+  Background:
+  Scenario: Verify Login button action in LMS-UI Application
+
   Scenario: Validation of add a new program button
     Given Admin is on manage program page
     When Admin clicks on add a new program button
@@ -10,3 +14,7 @@ Feature: Validation of Program Page
       Then Admin should see a message "Manage Program"
 
 
+Scenario: Validation of edit button
+  Given Admin is on manage program page
+  When Admin clicks on edit program button under EDIT/DELETE header
+  Then Admin gets redirected to Program Details popup window with filled program details in the input boxes.

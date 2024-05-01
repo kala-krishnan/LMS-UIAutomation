@@ -1,5 +1,6 @@
 package com.LMSUIAutomation.StepDefinitions;
 
+import io.cucumber.java.BeforeAll;
 import org.openqa.selenium.WebDriver;
 
 import com.lmsUIAutomation.driverFactory.DriverFactory;
@@ -10,7 +11,7 @@ public class Hooks {
 	public static WebDriver driver;
 	DriverFactory currentDriver= new DriverFactory();
 	
-	 @Before
+	 @BeforeAll
 	    public void beforeScenario() {
 	    	
 	    	try {

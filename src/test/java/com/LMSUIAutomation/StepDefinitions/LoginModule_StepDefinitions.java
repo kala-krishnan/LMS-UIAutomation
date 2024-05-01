@@ -2,6 +2,7 @@ package com.LMSUIAutomation.StepDefinitions;
 
 import com.lmsUIAutomation.PageObjects.LoginPageObject;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,7 +11,7 @@ public class LoginModule_StepDefinitions {
 	
 	TestContext testContext;
 	LoginPageObject loginPage;
-	
+
 	public LoginModule_StepDefinitions(TestContext testContext)
 	{
 		this.testContext = testContext;
@@ -21,6 +22,8 @@ public class LoginModule_StepDefinitions {
 	public void admin_is_in_lms_ui_home_page() {
 		loginPage.launchHome();
 	}
+
+	@Before
 	@When("Admin enters valid credentials and clicks login button through keyboard")
 	public void admin_enters_valid_credentials_and_clicks_login_button_through_keyboard() {
 		loginPage.enterValidCredentials();
