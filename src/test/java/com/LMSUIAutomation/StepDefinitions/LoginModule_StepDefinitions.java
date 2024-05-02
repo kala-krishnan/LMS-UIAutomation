@@ -23,7 +23,7 @@ public class LoginModule_StepDefinitions {
 		loginPage.launchHome();
 	}
 
-	@Before
+
 	@When("Admin enters valid credentials and clicks login button through keyboard")
 	public void admin_enters_valid_credentials_and_clicks_login_button_through_keyboard() {
 		loginPage.enterValidCredentials();

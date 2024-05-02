@@ -1,9 +1,6 @@
 Feature: Validation of Program Page
 
-  Background:
-  Scenario: Verify Login button action in LMS-UI Application
-
-  Scenario: Validation of add a new program button
+   Scenario: Validation of add a new program button
     Given Admin is on manage program page
     When Admin clicks on add a new program button
     Then Admin should see popup window with title "Program Details"
