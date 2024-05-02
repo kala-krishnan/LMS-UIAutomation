@@ -11,7 +11,7 @@ public class Hooks {
 	public static WebDriver driver;
 	DriverFactory currentDriver= new DriverFactory();
 	
-	 @BeforeAll
+	 @Before
 	    public void beforeScenario() {
 	    	
 	    	try {
