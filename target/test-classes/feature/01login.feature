@@ -18,7 +18,7 @@
 #Sample Feature Definition Template
 
 Feature: Login Page Verification
-
+Background:
 Scenario: Verify Login button action in LMS-UI Application
 Given Admin is in LMS-UI Home Page
 When Admin enters valid credentials and clicks login button through keyboard
